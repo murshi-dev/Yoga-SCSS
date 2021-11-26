@@ -1,0 +1,73 @@
+/* for reviews ---sectionC */
+@media (max-width: 1060px) {
+    .review-box {
+      width: 45%;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .showcase-content{
+      padding-left: 30px;
+      padding-right: 30px;
+      text-align: center;
+    }
+    /* for aboutus ---sectiona */
+    .aboutus-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+    /* for services---sectionB */
+ 
+    .services-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .review-box {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    /* for contact us ---sectionD */
+    .contact-content {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+    .right-side {
+      width: 100%;
+      margin-left: 0;
+      padding-bottom: 20px;
+    }
+  
+    /* hamburger */
+    .navlinks {
+      display: none;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .navlinks ul {
+      flex-direction: column;
+      text-align: center;
+    }
+    .hamburger {
+      display: block;
+    }
+  
+    .navlinks.show {
+      display: flex;
+  
+    }
+  }
+  

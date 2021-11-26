@@ -1,0 +1,73 @@
+@import "colors";
+@import "mediaqueries";
+@import "button";
+/* format navbar */
+nav {
+  top: 0;
+  left: 0;
+  padding: 0 1.5rem;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $black;
+  z-index: 2;
+  flex-wrap: wrap;
+}
+.logo > img {
+  width: 100%;
+  height: 65px;
+  object-fit: cover;
+  object-position: bottom;
+}
+.navlinks ul li a {
+  text-decoration: none;
+  color: $white;
+}
+.navlinks ul li {
+  list-style: none;
+  margin: 0 0.7em;
+}
+
+.navlinks ul {
+  display: flex;
+}
+
+.navlinks ul li a:hover {
+  color: $hover;
+}
+
+/* format hamburger icon */
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: $white;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+/* format the 'a' as button */
+.btn {
+  //created as a mixin since btn and btn-inverse share same style except color and border
+  @include button-design;
+  color: $white;
+  border: 2px solid $white;
+}
+.btn:hover {
+  color: $black;
+  background-color: $white;
+}
+
+/* inverse button */
+.btn-inverse {
+  @include button-design;
+  color: $black;
+  border: 2px solid $black;
+}
+.btn-inverse:hover {
+  color: $hover;
+  background-color: $black;
+}

@@ -1,0 +1,42 @@
+@import "colors";
+@import "mediaqueries";
+@import "section-setting";
+@import "heading-setting";
+/* format section-a */
+#section-a {
+  @include section-setting;
+  background-color: $brown;
+  color: $white;
+}
+.aboutus-heading {
+  @include heading-setting;
+}
+.aboutus-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.left-image {
+  max-width: 100%;
+  align-self: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.left-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 30px;
+}
+.right-content a .btn {
+  display: inline-block;
+}
